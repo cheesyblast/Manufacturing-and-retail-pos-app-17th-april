@@ -1,0 +1,163 @@
+{
+  "theme_and_archetype": {
+    "theme": "light",
+    "archetype": "Archetype 1 (Organic & Earthy) blended with Archetype 5 (Jewel & Luxury)",
+    "description": "A 'Quiet Luxury' aesthetic for an ERP and POS system. It combines minimalist beige neutral tones with deep, authoritative navy accents to create a premium, calm, and trustworthy environment for both backend staff and customer-facing POS."
+  },
+  "typography": {
+    "font_families": {
+      "headings": "Cabinet Grotesk, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "hierarchy_rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-medium text-navy-900",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-medium text-navy-900",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium text-navy-800",
+      "h4": "text-lg sm:text-xl font-medium text-navy-800",
+      "body": "text-base text-navy-700 leading-relaxed",
+      "labels_overlines": "text-xs uppercase tracking-[0.2em] font-bold text-taupe-600"
+    }
+  },
+  "colors": {
+    "global": {
+      "background": "#F7F6F2",
+      "surface": "#FFFFFF",
+      "surface_secondary": "#EFECE5",
+      "border": "#E5E1D8",
+      "ring": "#131D33"
+    },
+    "brand": {
+      "primary": "#131D33", 
+      "primary_hover": "#1E2C4A",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#D2C9B6",
+      "secondary_foreground": "#131D33"
+    },
+    "text": {
+      "primary": "#131D33",
+      "secondary": "#5C667A",
+      "muted": "#8A94A6"
+    },
+    "status": {
+      "success": "#4A5D4E",
+      "success_bg": "#E8ECE9",
+      "warning": "#B8860B",
+      "warning_bg": "#FDF8E7",
+      "danger": "#8C3A3A",
+      "danger_bg": "#F5E9E9"
+    },
+    "tailwind_config_additions": {
+      "beige": {
+        "50": "#FDFDFC",
+        "100": "#F7F6F2",
+        "200": "#EFECE5",
+        "300": "#E5E1D8",
+        "400": "#D2C9B6",
+        "500": "#BFA588"
+      },
+      "navy": {
+        "50": "#F0F2F5",
+        "100": "#D9DFE8",
+        "500": "#3B4D73",
+        "700": "#1E2C4A",
+        "800": "#131D33",
+        "900": "#0A101D"
+      }
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing (Quiet Luxury relies on breathing room). Mobile-first, prioritizing tablet (iPad) interfaces for the POS system.",
+    "container_padding": "p-6 md:p-8 lg:p-12",
+    "bento_grid": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "pos": "grid grid-cols-1 lg:grid-cols-12 gap-6"
+    },
+    "surfaces": {
+      "cards": "bg-white border border-beige-300 rounded-2xl shadow-[0_4px_20px_rgba(19,29,51,0.03)]",
+      "pos_sidebar": "bg-navy-900 text-white rounded-r-3xl",
+      "glassmorphism": "backdrop-blur-xl bg-white/70 border-white/40 shadow-sm"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-navy-800 text-white hover:bg-navy-700 transition-colors rounded-xl px-6 py-3 font-medium",
+      "secondary": "bg-beige-200 text-navy-900 hover:bg-beige-300 transition-colors rounded-xl px-6 py-3 font-medium",
+      "ghost": "text-navy-700 hover:bg-beige-200 transition-colors rounded-xl px-6 py-3",
+      "pos_action": "h-16 text-lg rounded-2xl flex flex-col items-center justify-center gap-2"
+    },
+    "inputs": {
+      "default": "bg-white border border-beige-300 rounded-xl px-4 py-3 text-navy-900 focus:ring-2 focus:ring-navy-500 focus:border-transparent transition-all placeholder:text-navy-500/50"
+    },
+    "tables": {
+      "container": "border border-beige-300 rounded-2xl overflow-hidden bg-white",
+      "header": "bg-beige-100 text-navy-800 font-semibold text-sm uppercase tracking-wider py-4 px-6 border-b border-beige-300",
+      "row": "border-b border-beige-200 hover:bg-beige-50 transition-colors",
+      "cell": "py-4 px-6 text-sm text-navy-700"
+    },
+    "pos_specific": {
+      "product_card": "bg-white border border-beige-300 rounded-2xl p-4 flex flex-col items-center text-center cursor-pointer hover:border-navy-500 transition-all hover:shadow-lg active:scale-95",
+      "cart_sidebar": "bg-white border-l border-beige-300 h-full flex flex-col"
+    }
+  },
+  "motion": {
+    "hover": "transition-all duration-200 ease-in-out",
+    "page_transition": "framer-motion initial opacity-0 translate-y-2 animate-in fade-in slide-in-from-bottom-4 duration-500",
+    "list_stagger": "staggerChildren 0.1s delay"
+  },
+  "icons": {
+    "library": "@phosphor-icons/react",
+    "installation": "yarn add @phosphor-icons/react",
+    "usage": "Use Phosphor Icons with 'regular' or 'light' weight for a premium, thin-line aesthetic."
+  },
+  "media": {
+    "logos": [
+      {
+        "category": "brand_logo",
+        "url": "https://static.prod-images.emergentagent.com/jobs/9efb1b10-3182-4939-931e-3975c608d93e/images/fc3fe8419e8ec531202d0fb5cfb69d923536da9c0eca71d51c578fb78b1ad5ee.png",
+        "description": "Minimalist elegant logo mark of a thread spool and needle in dark navy"
+      }
+    ],
+    "backgrounds": [
+      {
+        "category": "login_hero",
+        "url": "https://static.prod-images.emergentagent.com/jobs/9efb1b10-3182-4939-931e-3975c608d93e/images/daae9b06d8d8cbb60aa71e5c69afa4130e34abc24462812224d1dcf7d966235e.png",
+        "description": "Minimalist flat lay of premium beige linen fabric with deep navy thread spools"
+      },
+      {
+        "category": "store_interior",
+        "url": "https://static.prod-images.emergentagent.com/jobs/9efb1b10-3182-4939-931e-3975c608d93e/images/41fd347e99180f66039a67a7f6e7cf327cefc73794f4deaedee6ba6a3313e5e9.png",
+        "description": "Clean, modern clothing store interior in beige and navy"
+      }
+    ],
+    "products": [
+      {
+        "category": "pos_product_1",
+        "url": "https://images.unsplash.com/photo-1596433904493-c7ae3d6d179f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwzfHxmb2xkZWQlMjBsaW5lbiUyMHNoaXJ0cyUyMG5ldXRyYWx8ZW58MHx8fHwxNzc2MjQ3NzUyfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Folded premium shirts"
+      },
+      {
+        "category": "pos_product_2",
+        "url": "https://images.pexels.com/photos/8346226/pexels-photo-8346226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Stack of folded shirts in earthy tones"
+      },
+      {
+        "category": "pos_product_3",
+        "url": "https://images.pexels.com/photos/7445132/pexels-photo-7445132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Linen fabrics"
+      }
+    ]
+  },
+  "accessibility_and_testing": {
+    "contrast": "Ensure all text against beige backgrounds meets APCA standards. Navy (#131D33) on Beige (#F7F6F2) provides excellent contrast.",
+    "testing": "All interactive and key informational elements MUST include a 'data-testid' attribute in kebab-case format based on role (e.g., 'pos-checkout-button', 'login-submit')."
+  },
+  "instructions_to_main_agent": [
+    "1. Initialize Tailwind with the provided custom color palette (Beige and Navy scales) in tailwind.config.js.",
+    "2. Use pure HTML + Tailwind for structural layouts, and Shadcn UI (heavily customized with our colors and rounded-xl/2xl radii) for interactive components like tables, dropdowns, and modals.",
+    "3. Build a distinct mobile-first POS interface that takes full advantage of tablet viewports (iPad dimensions) featuring large touch targets (h-16 buttons), a split-screen bento layout (products on left, cart on right).",
+    "4. For data-dense ERP pages (Inventory, Accounting), utilize a crisp, card-based bento grid with muted backgrounds to reduce eye strain, emphasizing key metrics using the Navy color.",
+    "5. Use Phosphor Icons (@phosphor-icons/react) to maintain the quiet luxury, thin-line aesthetic.",
+    "6. MUST integrate the media URLs from this JSON. DO NOT use placeholder images."
+  ]
+}
