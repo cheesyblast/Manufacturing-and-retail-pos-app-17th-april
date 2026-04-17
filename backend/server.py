@@ -1284,6 +1284,17 @@ async def get_migration_sql():
 @app.on_event("startup")
 async def startup():
     logger.info("Starting ERP application...")
+    # Run database migrations
+    try:
+        from migrations import run_migrations
+        success = run_migrations()
+        if success:
+            logger.info("Database migrations completed successfully.")
+        else:
+            logger.warning("Some migrations failed. Check logs for details.")
+    except Exception as e:
+        logger.warning(f"Migration runner error (non-fatal): {e}")
+    # Seed admin user
     try:
         admin_email = os.environ.get("ADMIN_EMAIL", "admin@erp.com")
         admin_password = os.environ.get("ADMIN_PASSWORD", "admin123")
